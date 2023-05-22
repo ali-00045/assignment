@@ -16,5 +16,5 @@ public class PaymentRequest {
     private String customer_name;
     private Integer amount;
     private PaymentMethod method;
-    private Status staus;
+    private Status status;
 }

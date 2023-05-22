@@ -11,10 +11,10 @@ import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import io.swagger.v3.oas.annotations.servers.Server;
 
 @OpenAPIDefinition(info = @Info(contact = @Contact(name = "task", email = "contact@taskcoding.com", url = "https://taskcoding.com/course"), description = "OpenApi documentation for Spring Security", title = "OpenApi specification - task", version = "1.0", license = @License(name = "Licence name", url = "https://some-url.com"), termsOfService = "Terms of service"), servers = {
-                @Server(description = "Local ENV", url = "http://localhost:8080"),
-                @Server(description = "PROD ENV", url = "https://taskcoding.com/course")
+        @Server(description = "Local ENV", url = "http://localhost:8080"),
+        @Server(description = "PROD ENV", url = "https://taskcoding.com/course")
 }, security = {
-                @SecurityRequirement(name = "bearerAuth")
+        @SecurityRequirement(name = "bearerAuth")
 })
 @SecurityScheme(name = "bearerAuth", description = "JWT auth description", scheme = "bearer", type = SecuritySchemeType.HTTP, bearerFormat = "JWT", in = SecuritySchemeIn.HEADER)
 public class OpenApiConfig {

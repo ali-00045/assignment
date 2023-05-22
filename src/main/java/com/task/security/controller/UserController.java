@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1/management")
-@Tag(name = "Management")
-public class ManagementController {
+@RequestMapping("/api/v1/user")
+@Tag(name = "User")
+public class UserController {
 
-    @Operation(description = "Get endpoint for manager", summary = "This is a summary for management get endpoint", responses = {
+    @Operation(description = "Get endpoint for manager", summary = "This is a summary for user get endpoint", responses = {
             @ApiResponse(description = "Success", responseCode = "200"),
             @ApiResponse(description = "Unauthorized / Invalid Token", responseCode = "403")
     }
@@ -23,21 +23,21 @@ public class ManagementController {
     )
     @GetMapping
     public String get() {
-        return "GET:: management controller";
+        return "GET:: user controller";
     }
 
     @PostMapping
     public String post() {
-        return "POST:: management controller";
+        return "POST:: user controller";
     }
 
     @PutMapping
     public String put() {
-        return "PUT:: management controller";
+        return "PUT:: user controller";
     }
 
     @DeleteMapping
     public String delete() {
-        return "DELETE:: management controller";
+        return "DELETE:: user controller";
     }
 }
